@@ -1,7 +1,14 @@
 class Board
 
   def initialize
-    @layout = Array.new(9, Array.new(9, 'x'))
+    # @layout = Array.new(9, Array.new(9, 'x'))
+    @layout = [["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"], ["x", "x", "x", "x", "x", "x", "x", "x", "x"]]
+  end
+
+  def mark_miss(coordinate)
+    row = coordinate[0] - 1
+    column = coordinate[1] - 1
+    @layout[row][column] = 'm'
   end
 
   def show

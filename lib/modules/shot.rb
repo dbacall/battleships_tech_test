@@ -13,12 +13,12 @@ module Shot
   def hit?(player, coordinate)
     hit = false
     sunk = false
-    player[:ships].each{|ship| 
-    if ship.coordinates.include?(coordinate)
-      hit = true
-      ship.coordinates.delete(coordinate)
-    end
-    sunk = true if ship.sunk?
+    player[:ships].each { |ship| 
+      if ship.coordinates.include?(coordinate)
+        hit = true
+        ship.coordinates.delete(coordinate)
+      end
+      sunk = true if ship.sunk?
     }
     if hit
       if sunk

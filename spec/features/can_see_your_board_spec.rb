@@ -20,5 +20,4 @@ describe Board do
       ).to_stdout
     end
   end
-
 end
