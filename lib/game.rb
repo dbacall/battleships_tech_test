@@ -18,9 +18,17 @@ class Game
 
   def shot(coordinate, player_name)
     if player1?(player_name)
-      "You hit a ship!" if @player1[:ships].reduce(:+).include?(coordinate)
+      if @player1[:ships].reduce(:+).include?(coordinate)
+        "You hit a ship!"
+      else
+        "You missed!"
+      end
     else
-      "You hit a ship!" if @player2[:ships].reduce(:+).include?(coordinate)
+      if @player2[:ships].reduce(:+).include?(coordinate)
+        "You hit a ship!" 
+      else
+        "You missed!"
+      end
     end
   end
 
