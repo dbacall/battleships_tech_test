@@ -18,8 +18,8 @@ describe Game do
     it "tells us if we have sunk the opponents ship" do
       game.add_ship(3, [3, 5], 'right', "Jim")
       game.player_turn([3, 5], "Jim")
-      game.player_turn([4, 5], "Jim")
-      expect(game.player_turn([5, 5], "Jim")).to eq 'You hit and sunk a ship!'
+      game.player_turn([3, 6], "Jim")
+      expect(game.player_turn([3, 7], "Jim")).to eq 'You hit and sunk a ship!'
     end
   end
 

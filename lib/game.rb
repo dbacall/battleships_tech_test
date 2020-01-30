@@ -1,10 +1,12 @@
 require_relative "./modules/shot.rb"
+require_relative "./modules/result.rb"
 require "ship"
 require "board"
 
 class Game
 
   include Shot
+  include Result
 
   def initialize(player1_name, player2_name, player1_board = Board.new, player2_board = Board.new)
     @player1 = { name: player1_name, ships: [], board: player1_board }
@@ -24,8 +26,12 @@ class Game
     end
   end
 
-  def player_turn(coordinate, player_name)
-    shot(coordinate, player_name)
+  def player_turn(coordinate, player_hit)
+    shot(coordinate, player_hit)
+  end
+
+  def finished?(player_hit)
+    game_over?(player_hit)
   end
 
   def show_board(name)

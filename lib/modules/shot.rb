@@ -20,7 +20,6 @@ module Shot
       end
       sunk = true if ship.sunk?
     }
-    p hit
     if hit
       player_hitting[:board].mark_hit(coordinate)
       if sunk
