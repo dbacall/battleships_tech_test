@@ -1,8 +1,8 @@
 class Game
 
   def initialize(player1_name, player2_name)
-    @player1 = {name: player1_name, ships: []}
-    @player2 = {name: player2_name, ships: []}
+    @player1 = { name: player1_name, ships: [] }
+    @player2 = { name: player2_name, ships: [] }
   end
 
   def add_ship(length, coordinate, direction, player_name)
@@ -48,28 +48,28 @@ class Game
   end
 
   def left_coordinates(length, coordinate)
-    (length-1).times { 
+    (length - 1).times { 
       @ship << [coordinate[0] - @index, coordinate[1]]
       @index += 1
     }
   end
 
   def right_coordinates(length, coordinate)
-    (length-1).times { 
+    (length - 1).times { 
       @ship << [coordinate[0] + @index, coordinate[1]]
       @index += 1
     }
   end
 
   def up_coordinates(length, coordinate)
-    (length-1).times { 
+    (length - 1).times { 
       @ship << [coordinate[0], coordinate[1] - @index]
       @index += 1
     }
   end
 
   def down_coordinates(length, coordinate)
-    (length-1).times { 
+    (length - 1).times { 
       @ship << [coordinate[0], coordinate[1] + @index]
       @index += 1
     }

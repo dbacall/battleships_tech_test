@@ -2,7 +2,7 @@ require_relative "../../lib/game.rb"
 
 describe Game do
 
-  let(:game) {Game.new("David", "Jim")}
+  let(:game) { Game.new("David", "Jim") }
 
   describe '#shot' do
     it 'tells us if we have hit our opponents ships' do
