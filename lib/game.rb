@@ -12,8 +12,10 @@ class Game
       left_coordinates(length, coordinate)
     when 'right'
       right_coordinates(length, coordinate)
-    else
+    when 'up'
       up_coordinates(length, coordinate)
+    else
+      down_coordinates(length, coordinate)
     end
     @ships << @ship
   end
@@ -37,6 +39,13 @@ class Game
   def up_coordinates(length, coordinate)
     (length-1).times { 
       @ship << [coordinate[0], coordinate[1] - @index]
+      @index += 1
+    }
+  end
+
+  def down_coordinates(length, coordinate)
+    (length-1).times { 
+      @ship << [coordinate[0], coordinate[1] + @index]
       @index += 1
     }
   end

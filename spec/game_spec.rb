@@ -26,6 +26,10 @@ describe Game do
     it 'can choose the direction of the ship to be up' do
       expect(game.add_ship(3, [7, 3], 'up')).to eq [[[7, 3], [7, 2], [7, 1]]]
     end
+
+    it 'can choose the direction of the ship to be down' do
+      expect(game.add_ship(3, [7, 3], 'down')).to eq [[[7, 3], [7, 4], [7, 5]]]
+    end
   end
 
 end
