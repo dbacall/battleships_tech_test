@@ -10,7 +10,7 @@ describe Game do
       game.player_turn([3, 5], 'Jim')
       game.player_turn([3, 6], 'Jim')
       game.player_turn([3, 7], 'Jim')
-      expect(game.finished?('Jim')).to eq "All Jim's ships are sunk. David wins!"
+      expect { game.finished?('Jim') }.to output("All Jim's ships are sunk. David wins!\n").to_stdout
     end
   end
 

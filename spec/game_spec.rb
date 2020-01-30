@@ -2,7 +2,7 @@ require_relative "../lib/game.rb"
 
 describe Game do
 
-  let(:player1_board) { double :Board, mark_miss: '', show: 'board shown' }
+  let(:player1_board) { double :Board, mark_miss: '', mark_hit: '', show: 'board shown' }
   let(:player2_board) { double :Board }
   let(:game) { Game.new("David", "Jim", player1_board, player2_board) }
 
@@ -37,6 +37,22 @@ describe Game do
       expect(game.add_ship(3, [7, 3], 'down', "David")).to eq(
       [[7, 3], [8, 3], [9, 3]])
     end
+
+    it 'raises an error if the ship will go off the valid coordinates' do
+      expect { game.add_ship(3, [1, 9], 'right', 'David') }.to raise_error("Cannot place ship on coordinates that do not exist!")
+    end
+
+    it 'raises an error if the ship will go off the valid coordinates' do
+      expect { game.add_ship(3, [1, 1], 'left', 'David') }.to raise_error("Cannot place ship on coordinates that do not exist!")
+    end
+
+    it 'raises an error if the ship will go off the valid coordinates' do
+      expect { game.add_ship(3, [1, 9], 'up', 'David') }.to raise_error("Cannot place ship on coordinates that do not exist!")
+    end
+
+    it 'raises an error if the ship will go off the valid coordinates' do
+      expect { game.add_ship(3, [9, 1], 'down', 'David') }.to raise_error("Cannot place ship on coordinates that do not exist!")
+    end
   end
 
   describe '#shot' do
@@ -60,4 +76,14 @@ describe Game do
     end
   end
 
+  describe '#finished?' do
+    it 'returns the winner when the game is over' do
+      allow(game).to receive(:game_over?).and_return("All Jim's ships are sunk. David wins!")
+      game.add_ship(3, [3, 5], 'right', "Jim")
+      game.player_turn([3, 5], 'Jim')
+      game.player_turn([3, 6], 'Jim')
+      game.player_turn([3, 7], 'Jim')
+      expect(game.finished?('Jim')).to eq "All Jim's ships are sunk. David wins!"
+    end
+  end
 end

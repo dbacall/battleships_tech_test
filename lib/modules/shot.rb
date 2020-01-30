@@ -23,13 +23,13 @@ module Shot
     if hit
       player_hitting[:board].mark_hit(coordinate)
       if sunk
-        'You hit and sunk a ship!'
+        puts 'You hit and sunk a ship!'
       else
-        "You hit a ship!"
+        puts "You hit a ship!"
       end
     else
       player_hitting[:board].mark_miss(coordinate)
-      "You missed!"
+      puts "You missed!"
     end
   end
 end

@@ -1,7 +1,8 @@
 require_relative "./modules/shot.rb"
 require_relative "./modules/result.rb"
-require "ship"
-require "board"
+require_relative "./ship.rb"
+require_relative "./board.rb"
+
 
 class Game
 
@@ -16,6 +17,7 @@ class Game
   def add_ship(length, coordinate, direction, player_name)
     @ship = [coordinate]
     @index = 1
+    coordinate_validator(length, coordinate, direction)
     coordinate_placer(length, coordinate, direction)
     if player1?(player_name)
       @player1[:ships] << Ship.new(@ship)
@@ -89,4 +91,17 @@ class Game
     name == @player1[:name]
   end
 
+  def coordinate_validator(length, coordinate, direction)
+    error_message = "Cannot place ship on coordinates that do not exist!"
+    case direction
+    when 'right'
+      raise error_message if 10 - coordinate[1] < length
+    when 'left'
+      raise error_message if coordinate[1] < length
+    when 'up'
+      raise error_message if coordinate[0] < length
+    else
+      raise error_message if 10 - coordinate[0] < length
+    end
+  end
 end
