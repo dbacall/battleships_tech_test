@@ -1,7 +1,49 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/student/Makers/week10/battleships_tech_test/spec/features/can_see_your_board_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Makers/week10/battleships_tech_test/lib/board.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        9,
+        null,
+        null,
+        null,
+        null
+      ]
     },
-    "timestamp": 1580376554
+    "timestamp": 1580378104
   }
 }
