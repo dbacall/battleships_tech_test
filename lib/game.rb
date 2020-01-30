@@ -7,10 +7,13 @@ class Game
   def add_ship(length = 3, coordinate, direction)
     @ship = [coordinate]
     @index = 1
-    if direction == 'left'
+    case direction
+    when 'left'
       left_coordinates(length, coordinate)
-    else
+    when 'right'
       right_coordinates(length, coordinate)
+    else
+      up_coordinates(length, coordinate)
     end
     @ships << @ship
   end
@@ -27,6 +30,13 @@ class Game
   def right_coordinates(length, coordinate)
     (length-1).times { 
       @ship << [coordinate[0] + @index, coordinate[1]]
+      @index += 1
+    }
+  end
+
+  def up_coordinates(length, coordinate)
+    (length-1).times { 
+      @ship << [coordinate[0], coordinate[1] - @index]
       @index += 1
     }
   end
