@@ -5,9 +5,9 @@ class Game
 
   include Shot
 
-  def initialize(player1_name, player2_name)
-    @player1 = { name: player1_name, ships: [] }
-    @player2 = { name: player2_name, ships: [] }
+  def initialize(player1_name, player2_name, player1_board = Board.new, player2_board = Board.new)
+    @player1 = { name: player1_name, ships: [], board: player1_board }
+    @player2 = { name: player2_name, ships: [], board: player2_board }
   end
 
   def add_ship(length, coordinate, direction, player_name)
@@ -25,6 +25,14 @@ class Game
 
   def player_turn(coordinate, player_name)
     shot(coordinate, player_name)
+  end
+
+  def show_board(name)
+    if player1?(name)
+      @player1[:board].show
+    else
+      @player2[:board].show
+    end
   end
 
   private
