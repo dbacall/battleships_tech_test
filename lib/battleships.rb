@@ -17,18 +17,23 @@ class Battleships
     player_number = 1
     while player_number < 3 do
       while ship_length <= 7 do
-        puts "Player #{player_number} please choose the starting coordinate for your ship of length #{ship_length}.
-        First choose the row: (from 1-9)"
-        row = gets.chomp.to_i
-        puts "Now choose the column: (from 1-9)"
-        col = gets.chomp.to_i
-        puts "Now choose the direction: (right, left, up or down)"
-        direction = gets.chomp
-        if player_number == 1
-          @game.add_ship(ship_length, [row, col], direction, @player1)
-        else
-          @game.add_ship(ship_length, [row, col], direction, @player2)
-        end
+        begin
+          puts "Player #{player_number} please choose the starting coordinate for your ship of length #{ship_length}.
+          First choose the row: (from 1-9)"
+          row = gets.chomp.to_i
+          puts "Now choose the column: (from 1-9)"
+          col = gets.chomp.to_i
+          puts "Now choose the direction: (right, left, up or down)"
+          direction = gets.chomp
+          if player_number == 1
+            @game.add_ship(ship_length, [row, col], direction, @player1)
+          else
+            @game.add_ship(ship_length, [row, col], direction, @player2)
+          end
+        rescue RuntimeError => e
+          puts e        
+          ship_length -= 2
+        end 
         ship_length += 2
       end
       player_number += 1

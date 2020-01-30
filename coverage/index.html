@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-30T16:10:57+00:00">2020-01-30T16:10:57+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-30T17:10:07+00:00">2020-01-30T17:10:07+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.78%</span></span>
+    (<span class="covered_percent"><span class="green">98.85%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.52
+         5.38
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>14</b> files in total.
-    <b>246</b> relevant lines. 
-    <span class="green"><b>243</b> lines covered</span> and
+    <b>262</b> relevant lines. 
+    <span class="green"><b>259</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#ca770651f0a63d20b95a97f27dd0ad61ffe3955d" class="src_link" title="lib/game.rb">lib/game.rb</a></td>
-        <td class="green strong">98.33 %</td>
-        <td>107</td>
-        <td>60</td>
-        <td>59</td>
+        <td class="green strong">98.63 %</td>
+        <td>128</td>
+        <td>73</td>
+        <td>72</td>
         <td>1</td>
-        <td>9.0</td>
+        <td>11.4</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>7.7</td>
+        <td>7.8</td>
       </tr>
       
       <tr>
@@ -173,9 +173,9 @@
       <tr>
         <td class="strong"><a href="#75c9d34a52fdc3b3f2dd7f414dda1141728b16f8" class="src_link" title="spec/game_spec.rb">spec/game_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>89</td>
-        <td>48</td>
-        <td>48</td>
+        <td>94</td>
+        <td>51</td>
+        <td>51</td>
         <td>0</td>
         <td>2.0</td>
       </tr>
@@ -432,10 +432,10 @@
         <div class="source_table" id="ca770651f0a63d20b95a97f27dd0ad61ffe3955d">
   <div class="header">
     <h3>lib/game.rb</h3>
-    <h4><span class="green">98.33 %</span> covered</h4>
+    <h4><span class="green">98.63 %</span> covered</h4>
     <div>
-      <b>60</b> relevant lines. 
-      <span class="green"><b>59</b> lines covered</span> and
+      <b>73</b> relevant lines. 
+      <span class="green"><b>72</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -473,613 +473,739 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">class Game</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  include Shot</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">  include Result</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(player1_name, player2_name, player1_board = Board.new, player2_board = Board.new)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="13">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="12">
+          <span class="hits">27</span>
           
           <code class="ruby">    @player1 = { name: player1_name, ships: [], board: player1_board }</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="14">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="13">
+          <span class="hits">27</span>
           
           <code class="ruby">    @player2 = { name: player2_name, ships: [], board: player2_board }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">  def add_ship(length, coordinate, direction, player_name)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="18">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="28" data-linenumber="17">
+          <span class="hits">28</span>
           
           <code class="ruby">    @ship = [coordinate]</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="19">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="28" data-linenumber="18">
+          <span class="hits">28</span>
           
           <code class="ruby">    @index = 1</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="20">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="28" data-linenumber="19">
+          <span class="hits">28</span>
           
           <code class="ruby">    coordinate_validator(length, coordinate, direction)</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="21">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="20">
+          <span class="hits">24</span>
           
-          <code class="ruby">    coordinate_placer(length, coordinate, direction)</code>
+          <code class="ruby">    coordinate_in_use?(length, coordinate, direction, player_name)</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="22">
-          <span class="hits">22</span>
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    # coordinate_placer(length, coordinate, direction)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="23" data-linenumber="23">
+          <span class="hits">23</span>
           
           <code class="ruby">    if player1?(player_name)</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="23">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="24">
+          <span class="hits">15</span>
           
           <code class="ruby">      @player1[:ships] &lt;&lt; Ship.new(@ship)</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="24">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="25">
+          <span class="hits">15</span>
           
           <code class="ruby">      @player1[:ships].last.coordinates</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="26">
-          <span class="hits">8</span>
-          
-          <code class="ruby">      @player2[:ships] &lt;&lt; Ship.new(@ship)</code>
         </li>
       
         <li class="covered" data-hits="8" data-linenumber="27">
           <span class="hits">8</span>
           
-          <code class="ruby">      @player2[:ships].last.coordinates</code>
+          <code class="ruby">      @player2[:ships] &lt;&lt; Ship.new(@ship)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="covered" data-hits="8" data-linenumber="28">
+          <span class="hits">8</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      @player2[:ships].last.coordinates</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">  def player_turn(coordinate, player_hit)</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="32">
+        <li class="covered" data-hits="16" data-linenumber="33">
           <span class="hits">16</span>
           
           <code class="ruby">    shot(coordinate, player_hit)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">  def finished?(player_hit)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="36">
+        <li class="covered" data-hits="2" data-linenumber="37">
           <span class="hits">2</span>
           
           <code class="ruby">    game_over?(player_hit)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">  def show_board(name)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="40">
+        <li class="covered" data-hits="3" data-linenumber="41">
           <span class="hits">3</span>
           
           <code class="ruby">    if player1?(name)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="41">
+        <li class="covered" data-hits="3" data-linenumber="42">
           <span class="hits">3</span>
           
           <code class="ruby">      @player1[:board].show</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
+        <li class="missed" data-hits="0" data-linenumber="44">
           
           
           <code class="ruby">      @player2[:board].show</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
+        <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
           <code class="ruby">  def coordinate_placer(length, coordinate, direction)</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="50">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="51">
+          <span class="hits">24</span>
           
           <code class="ruby">    case direction</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">    when &#39;up&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="52">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="53">
+          <span class="hits">3</span>
           
           <code class="ruby">      up_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">    when &#39;down&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="54">
+        <li class="covered" data-hits="2" data-linenumber="55">
           <span class="hits">2</span>
           
           <code class="ruby">      down_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">    when &#39;left&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="56">
+        <li class="covered" data-hits="2" data-linenumber="57">
           <span class="hits">2</span>
           
           <code class="ruby">      left_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="58">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="17" data-linenumber="59">
+          <span class="hits">17</span>
           
           <code class="ruby">      right_coordinates(length, coordinate)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
           <code class="ruby">  def up_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="63">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="64">
+          <span class="hits">3</span>
           
           <code class="ruby">    (length - 1).times { </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="64">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="65">
+          <span class="hits">6</span>
           
           <code class="ruby">      @ship &lt;&lt; [coordinate[0] - @index, coordinate[1]]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="65">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="66">
+          <span class="hits">6</span>
           
           <code class="ruby">      @index += 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby">    }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="covered" data-hits="3" data-linenumber="68">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @ship</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
           <code class="ruby">  def down_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="70">
+        <li class="covered" data-hits="2" data-linenumber="73">
           <span class="hits">2</span>
           
           <code class="ruby">    (length - 1).times { </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="71">
+        <li class="covered" data-hits="4" data-linenumber="74">
           <span class="hits">4</span>
           
           <code class="ruby">      @ship &lt;&lt; [coordinate[0] + @index, coordinate[1]]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="72">
+        <li class="covered" data-hits="4" data-linenumber="75">
           <span class="hits">4</span>
           
           <code class="ruby">      @index += 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="74">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="75">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="76">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def left_coordinates(length, coordinate)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="77">
           <span class="hits">2</span>
           
+          <code class="ruby">    @ship</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def left_coordinates(length, coordinate)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="81">
+          <span class="hits">2</span>
+          
           <code class="ruby">    (length - 1).times { </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="78">
+        <li class="covered" data-hits="4" data-linenumber="82">
           <span class="hits">4</span>
           
           <code class="ruby">      @ship &lt;&lt; [coordinate[0], coordinate[1] - @index]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="79">
+        <li class="covered" data-hits="4" data-linenumber="83">
           <span class="hits">4</span>
           
           <code class="ruby">      @index += 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="covered" data-hits="2" data-linenumber="85">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @ship</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
           
           
           <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="82">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def right_coordinates(length, coordinate)</code>
-        </li>
-      
-        <li class="covered" data-hits="16" data-linenumber="84">
-          <span class="hits">16</span>
-          
-          <code class="ruby">    (length - 1).times { </code>
-        </li>
-      
-        <li class="covered" data-hits="36" data-linenumber="85">
-          <span class="hits">36</span>
-          
-          <code class="ruby">      @ship &lt;&lt; [coordinate[0], coordinate[1] + @index]</code>
-        </li>
-      
-        <li class="covered" data-hits="36" data-linenumber="86">
-          <span class="hits">36</span>
-          
-          <code class="ruby">      @index += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="88">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="89">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
+        <li class="covered" data-hits="1" data-linenumber="88">
           <span class="hits">1</span>
           
-          <code class="ruby">  def player1?(name)</code>
+          <code class="ruby">  def right_coordinates(length, coordinate)</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="91">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="17" data-linenumber="89">
+          <span class="hits">17</span>
           
-          <code class="ruby">    name == @player1[:name]</code>
+          <code class="ruby">    (length - 1).times { </code>
+        </li>
+      
+        <li class="covered" data-hits="38" data-linenumber="90">
+          <span class="hits">38</span>
+          
+          <code class="ruby">      @ship &lt;&lt; [coordinate[0], coordinate[1] + @index]</code>
+        </li>
+      
+        <li class="covered" data-hits="38" data-linenumber="91">
+          <span class="hits">38</span>
+          
+          <code class="ruby">      @index += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="93">
+          <span class="hits">17</span>
+          
+          <code class="ruby">    @ship</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="95">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="94">
+        <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">  def coordinate_validator(length, coordinate, direction)</code>
+          <code class="ruby">  def player1?(name)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="95">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="65" data-linenumber="97">
+          <span class="hits">65</span>
           
-          <code class="ruby">    error_message = &quot;Cannot place ship on coordinates that do not exist!&quot;</code>
+          <code class="ruby">    name == @player1[:name]</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="96">
-          <span class="hits">26</span>
-          
-          <code class="ruby">    case direction</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="97">
-          
-          
-          <code class="ruby">    when &#39;right&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="17" data-linenumber="98">
-          <span class="hits">17</span>
-          
-          <code class="ruby">      raise error_message if 10 - coordinate[1] &lt; length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="99">
-          
-          
-          <code class="ruby">    when &#39;left&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="100">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      raise error_message if coordinate[1] &lt; length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="101">
-          
-          
-          <code class="ruby">    when &#39;up&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="102">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      raise error_message if coordinate[0] &lt; length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="103">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="104">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      raise error_message if 10 - coordinate[0] &lt; length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="105">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="106">
+        <li class="never" data-hits="" data-linenumber="98">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def coordinate_validator(length, coordinate, direction)</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="101">
+          <span class="hits">28</span>
+          
+          <code class="ruby">    error_message = &quot;Cannot place ship on coordinates that do not exist!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="102">
+          <span class="hits">28</span>
+          
+          <code class="ruby">    case direction</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby">    when &#39;right&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="104">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      raise error_message if 10 - coordinate[1] &lt; length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">    when &#39;left&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="106">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      raise error_message if coordinate[1] &lt; length</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">    when &#39;up&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="108">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      raise error_message if coordinate[0] &lt; length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="110">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      raise error_message if 10 - coordinate[0] &lt; length</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="114">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def coordinate_in_use?(length, coordinate, direction, player_name)</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="115">
+          <span class="hits">24</span>
+          
+          <code class="ruby">    already_placed = false</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="116">
+          <span class="hits">24</span>
+          
+          <code class="ruby">    coordinates_checking = coordinate_placer(length, coordinate, direction)</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="117">
+          <span class="hits">24</span>
+          
+          <code class="ruby">    if player1?(player_name)</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="118">
+          <span class="hits">16</span>
+          
+          <code class="ruby">      coordinates_checking.each{ |coord| </code>
+        </li>
+      
+        <li class="covered" data-hits="61" data-linenumber="119">
+          <span class="hits">61</span>
+          
+          <code class="ruby">        @player1[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="122">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      coordinates_checking.each{ |coord| </code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="123">
+          <span class="hits">24</span>
+          
+          <code class="ruby">        @player2[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="126">
+          <span class="hits">24</span>
+          
+          <code class="ruby">    raise &quot;You have already placed a ship on some/all those coordinates!&quot; if already_placed</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
           
           
           <code class="ruby">end</code>
@@ -1448,8 +1574,8 @@
           <code class="ruby">  def initialize(coordinates)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="6">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="6">
+          <span class="hits">27</span>
           
           <code class="ruby">    @coordinates = coordinates</code>
         </li>
@@ -2983,8 +3109,8 @@
     <h3>spec/game_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>48</b> relevant lines. 
-      <span class="green"><b>48</b> lines covered</span> and
+      <b>51</b> relevant lines. 
+      <span class="green"><b>51</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3016,20 +3142,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="5">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="5">
+          <span class="hits">16</span>
           
           <code class="ruby">  let(:player1_board) { double :Board, mark_miss: &#39;&#39;, mark_hit: &#39;&#39;, show: &#39;board shown&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="6">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="6">
+          <span class="hits">16</span>
           
           <code class="ruby">  let(:player2_board) { double :Board }</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="7">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="7">
+          <span class="hits">16</span>
           
           <code class="ruby">  let(:game) { Game.new(&quot;David&quot;, &quot;Jim&quot;, player1_board, player2_board) }</code>
         </li>
@@ -3325,202 +3451,232 @@
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    it &#39;raises an error if you already have a ship on the selected coordinates&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
+          <code class="ruby">      game.add_ship(3, [1, 1], &#39;right&#39;, &#39;David&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="59">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      expect { game.add_ship(3, [3, 1], &#39;up&#39;, &#39;David&#39;) }.to raise_error(&quot;You have already placed a ship on some/all those coordinates!&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
           <code class="ruby">  describe &#39;#shot&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;tells us if we have hit or missed our opponents ships&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
           <code class="ruby">      allow(game).to receive(:shot).and_return(&quot;You hit a ship!&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(game.player_turn([3, 5], &quot;Jim&quot;)).to eq &#39;You hit a ship!&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="64">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;tells us if we have missed our opponents ships&#39; do</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">      allow(game).to receive(:shot).and_return(&quot;You missed!&quot;)</code>
+          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
+          <code class="ruby">      expect(game.player_turn([3, 5], &quot;Jim&quot;)).to eq &#39;You hit a ship!&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="68">
           
-          <code class="ruby">      expect(game.player_turn([8, 5], &quot;Jim&quot;)).to eq &#39;You missed!&#39;</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
-          
-          
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;tells us if we have missed our opponents ships&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      allow(game).to receive(:shot).and_return(&quot;You missed!&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;#show_board&#39; do</code>
+          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;shows misses on your own board&#39; do</code>
+          <code class="ruby">      expect(game.player_turn([8, 5], &quot;Jim&quot;)).to eq &#39;You missed!&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="74">
           
-          <code class="ruby">      game.player_turn([2, 3], &quot;Jim&quot;)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="75">
           
-          <code class="ruby">      expect(game.show_board(&quot;David&quot;)).to eq &#39;board shown&#39;</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="77">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="78">
-          
-          
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;#show_board&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;shows misses on your own board&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;#finished?&#39; do</code>
+          <code class="ruby">      game.player_turn([2, 3], &quot;Jim&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;returns the winner when the game is over&#39; do</code>
+          <code class="ruby">      expect(game.show_board(&quot;David&quot;)).to eq &#39;board shown&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      allow(game).to receive(:game_over?).and_return(&quot;All Jim&#39;s ships are sunk. David wins!&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="82">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.player_turn([3, 5], &#39;Jim&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="84">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.player_turn([3, 6], &#39;Jim&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="85">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.player_turn([3, 7], &#39;Jim&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="86">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(game.finished?(&#39;Jim&#39;)).to eq &quot;All Jim&#39;s ships are sunk. David wins!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="89">
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;#finished?&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;returns the winner when the game is over&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      allow(game).to receive(:game_over?).and_return(&quot;All Jim&#39;s ships are sunk. David wins!&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.add_ship(3, [3, 5], &#39;right&#39;, &quot;Jim&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="88">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.player_turn([3, 5], &#39;Jim&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="89">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.player_turn([3, 6], &#39;Jim&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.player_turn([3, 7], &#39;Jim&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(game.finished?(&#39;Jim&#39;)).to eq &quot;All Jim&#39;s ships are sunk. David wins!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">end</code>

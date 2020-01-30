@@ -3,7 +3,6 @@ require_relative "./modules/result.rb"
 require_relative "./ship.rb"
 require_relative "./board.rb"
 
-
 class Game
 
   include Shot
@@ -18,7 +17,8 @@ class Game
     @ship = [coordinate]
     @index = 1
     coordinate_validator(length, coordinate, direction)
-    coordinate_placer(length, coordinate, direction)
+    coordinate_in_use?(length, coordinate, direction, player_name)
+
     if player1?(player_name)
       @player1[:ships] << Ship.new(@ship)
       @player1[:ships].last.coordinates
@@ -64,6 +64,8 @@ class Game
       @ship << [coordinate[0] - @index, coordinate[1]]
       @index += 1
     }
+    @ship
+
   end
 
   def down_coordinates(length, coordinate)
@@ -71,6 +73,7 @@ class Game
       @ship << [coordinate[0] + @index, coordinate[1]]
       @index += 1
     }
+    @ship
   end
 
   def left_coordinates(length, coordinate)
@@ -78,6 +81,7 @@ class Game
       @ship << [coordinate[0], coordinate[1] - @index]
       @index += 1
     }
+    @ship
   end
 
   def right_coordinates(length, coordinate)
@@ -85,6 +89,7 @@ class Game
       @ship << [coordinate[0], coordinate[1] + @index]
       @index += 1
     }
+    @ship
   end
 
   def player1?(name)
@@ -103,5 +108,20 @@ class Game
     else
       raise error_message if 10 - coordinate[0] < length
     end
+  end
+
+  def coordinate_in_use?(length, coordinate, direction, player_name)
+    already_placed = false
+    coordinates_checking = coordinate_placer(length, coordinate, direction)
+    if player1?(player_name)
+      coordinates_checking.each{ |coord| 
+        @player1[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}
+      }
+    else
+      coordinates_checking.each{ |coord| 
+        @player2[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}
+      }
+    end
+    raise "You have already placed a ship on some/all those coordinates!" if already_placed
   end
 end

@@ -53,6 +53,11 @@ describe Game do
     it 'raises an error if the ship will go off the valid coordinates' do
       expect { game.add_ship(3, [9, 1], 'down', 'David') }.to raise_error("Cannot place ship on coordinates that do not exist!")
     end
+
+    it 'raises an error if you already have a ship on the selected coordinates' do
+      game.add_ship(3, [1, 1], 'right', 'David')
+      expect { game.add_ship(3, [3, 1], 'up', 'David') }.to raise_error("You have already placed a ship on some/all those coordinates!")
+    end
   end
 
   describe '#shot' do
