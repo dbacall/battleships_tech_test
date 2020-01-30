@@ -1,5 +1,6 @@
 require_relative "./modules/shot.rb"
 require "ship"
+require "board"
 
 class Game
 
@@ -39,39 +40,39 @@ class Game
 
   def coordinate_placer(length, coordinate, direction)
     case direction
-    when 'left'
-      left_coordinates(length, coordinate)
-    when 'right'
-      right_coordinates(length, coordinate)
     when 'up'
       up_coordinates(length, coordinate)
-    else
+    when 'down'
       down_coordinates(length, coordinate)
+    when 'left'
+      left_coordinates(length, coordinate)
+    else
+      right_coordinates(length, coordinate)
     end
   end
 
-  def left_coordinates(length, coordinate)
+  def up_coordinates(length, coordinate)
     (length - 1).times { 
       @ship << [coordinate[0] - @index, coordinate[1]]
       @index += 1
     }
   end
 
-  def right_coordinates(length, coordinate)
+  def down_coordinates(length, coordinate)
     (length - 1).times { 
       @ship << [coordinate[0] + @index, coordinate[1]]
       @index += 1
     }
   end
 
-  def up_coordinates(length, coordinate)
+  def left_coordinates(length, coordinate)
     (length - 1).times { 
       @ship << [coordinate[0], coordinate[1] - @index]
       @index += 1
     }
   end
 
-  def down_coordinates(length, coordinate)
+  def right_coordinates(length, coordinate)
     (length - 1).times { 
       @ship << [coordinate[0], coordinate[1] + @index]
       @index += 1

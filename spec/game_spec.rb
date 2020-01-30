@@ -2,7 +2,9 @@ require_relative "../lib/game.rb"
 
 describe Game do
 
-  let(:game) { Game.new("David", "Jim") }
+  let(:player1_board) { double :Board, mark_miss: '', show: 'board shown'}
+  let(:player2_board) { double :Board}
+  let(:game) { Game.new("David", "Jim", player1_board, player2_board) }
 
   describe '#add_ship' do
     it 'adds a ship starting at a specific coordinate' do
@@ -48,6 +50,13 @@ describe Game do
       allow(game).to receive(:shot).and_return("You missed!")
       game.add_ship(3, [3, 5], 'right', "Jim")
       expect(game.player_turn([8, 5], "Jim")).to eq 'You missed!'
+    end
+  end
+
+  describe '#show_board' do
+    it 'shows misses on your own board' do
+      game.player_turn([2, 3], "Jim")
+      expect(game.show_board("David")).to eq 'board shown'
     end
   end
 
