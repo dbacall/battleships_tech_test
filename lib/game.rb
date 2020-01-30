@@ -4,10 +4,10 @@ class Game
     @ships = []
   end
 
-  def add_ship(coordinate)
+  def add_ship(length = 3, coordinate)
     ship = [coordinate]
     i = 1
-    2.times { 
+    (length-1).times { 
       ship << [coordinate[0] + i, coordinate[1]]
       i += 1
     }
