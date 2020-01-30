@@ -1,12 +1,32 @@
 class Game
 
-  def initialize
-    @ships = []
+  def initialize(player1_name, player2_name)
+    @player1 = {name: player1_name, ships: []}
+    @player2 = {name: player2_name, ships: []}
   end
 
-  def add_ship(length = 3, coordinate, direction)
+  def add_ship(length, coordinate, direction, player_name)
     @ship = [coordinate]
     @index = 1
+    coordinate_placer(length, coordinate, direction)
+    if player1?(player_name)
+      @player1[:ships] << @ship
+    else
+      @player2[:ships] << @ship
+    end
+  end
+
+  def shot(coordinate, player_name)
+    if player1?(player_name)
+      "You hit a ship!" if @player1[:ships].reduce(:+).include?(coordinate)
+    else
+      "You hit a ship!" if @player2[:ships].reduce(:+).include?(coordinate)
+    end
+  end
+
+  private
+
+  def coordinate_placer(length, coordinate, direction)
     case direction
     when 'left'
       left_coordinates(length, coordinate)
@@ -17,10 +37,7 @@ class Game
     else
       down_coordinates(length, coordinate)
     end
-    @ships << @ship
   end
-
-  private
 
   def left_coordinates(length, coordinate)
     (length-1).times { 
@@ -48,6 +65,10 @@ class Game
       @ship << [coordinate[0], coordinate[1] + @index]
       @index += 1
     }
+  end
+
+  def player1?(name)
+    name == @player1[:name]
   end
 
 end
