@@ -68,8 +68,53 @@
         null,
         null,
         null
+      ],
+      "/Users/student/Makers/week10/battleships_tech_test/spec/features/player_adds_ships_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Makers/week10/battleships_tech_test/lib/game.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        4,
+        4,
+        null,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Makers/week10/battleships_tech_test/spec/game_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1580378324
+    "timestamp": 1580379354
   }
 }
