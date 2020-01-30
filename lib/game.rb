@@ -1,4 +1,5 @@
 require_relative "./modules/shot.rb"
+require "ship"
 
 class Game
 
@@ -14,9 +15,11 @@ class Game
     @index = 1
     coordinate_placer(length, coordinate, direction)
     if player1?(player_name)
-      @player1[:ships] << @ship
+      @player1[:ships] << Ship.new(@ship)
+      @player1[:ships].last.coordinates
     else
-      @player2[:ships] << @ship
+      @player2[:ships] << Ship.new(@ship)
+      @player2[:ships].last.coordinates
     end
   end
 
