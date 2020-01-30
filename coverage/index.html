@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-30T10:15:54+00:00">2020-01-30T10:15:54+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-30T10:24:52+00:00">2020-01-30T10:24:52+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.94
+         2.54
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>39</b> relevant lines. 
-    <span class="green"><b>39</b> lines covered</span> and
+    <b>47</b> relevant lines. 
+    <span class="green"><b>47</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#ca770651f0a63d20b95a97f27dd0ad61ffe3955d" class="src_link" title="lib/game.rb">lib/game.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>8</td>
-        <td>8</td>
+        <td>17</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>2.3</td>
+        <td>5.5</td>
       </tr>
       
       <tr>
@@ -93,9 +93,9 @@
       <tr>
         <td class="strong"><a href="#6e57d4d3c12367b1629d66f55367b1bc783dedbd" class="src_link" title="spec/features/player_adds_ships_spec.rb">spec/features/player_adds_ships_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>6</td>
-        <td>6</td>
+        <td>18</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.2</td>
       </tr>
@@ -103,9 +103,9 @@
       <tr>
         <td class="strong"><a href="#75c9d34a52fdc3b3f2dd7f414dda1141728b16f8" class="src_link" title="spec/game_spec.rb">spec/game_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>6</td>
-        <td>6</td>
+        <td>18</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.2</td>
       </tr>
@@ -234,8 +234,8 @@
     <h3>lib/game.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -258,64 +258,88 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  def add_ship(coordinate)</code>
+          <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    ship = [coordinate]</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    i = 1</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    2.times { </code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="7">
+        <li class="covered" data-hits="4" data-linenumber="4">
           <span class="hits">4</span>
           
-          <code class="ruby">      ship &lt;&lt; [coordinate[0] + i, coordinate[1]]</code>
+          <code class="ruby">    @ships = []</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      i += 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">    }</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    ship</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def add_ship(coordinate)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="8">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    ship = [coordinate]</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="9">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    i = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    2.times { </code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="11">
+          <span class="hits">12</span>
+          
+          <code class="ruby">      ship &lt;&lt; [coordinate[0] + i, coordinate[1]]</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="12">
+          <span class="hits">12</span>
+          
+          <code class="ruby">      i += 1</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="14">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    @ships &lt;&lt; ship</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
@@ -657,8 +681,8 @@
     <h3>spec/features/player_adds_ships_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -690,8 +714,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">  let(:game) { Game.new }</code>
         </li>
@@ -717,7 +741,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(game.add_ship([2, 3])).to eq [[2, 3], [3, 3], [4, 3]]</code>
+          <code class="ruby">      expect(game.add_ship([2, 3])).to eq [[[2, 3], [3, 3], [4, 3]]]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -729,16 +753,46 @@
         <li class="never" data-hits="" data-linenumber="11">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;can add more than one ship&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.add_ship([2, 3])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(game.add_ship([3, 6])).to eq [[[2, 3], [3, 3], [4, 3]], [[3, 6], [4, 6], [5, 6]]]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -754,8 +808,8 @@
     <h3>spec/game_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -787,8 +841,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">  let(:game) { Game.new }</code>
         </li>
@@ -814,7 +868,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(game.add_ship([2, 3])).to eq [[2, 3], [3, 3], [4, 3]]</code>
+          <code class="ruby">      expect(game.add_ship([2, 3])).to eq [[[2, 3], [3, 3], [4, 3]]]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -826,16 +880,46 @@
         <li class="never" data-hits="" data-linenumber="11">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;can add more than one ship&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.add_ship([2, 3])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(game.add_ship([3, 6])).to eq [[[2, 3], [3, 3], [4, 3]], [[3, 6], [4, 6], [5, 6]]]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
