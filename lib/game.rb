@@ -1,4 +1,8 @@
+require_relative "./modules/shot.rb"
+
 class Game
+
+  include Shot
 
   def initialize(player1_name, player2_name)
     @player1 = { name: player1_name, ships: [] }
@@ -16,20 +20,8 @@ class Game
     end
   end
 
-  def shot(coordinate, player_name)
-    if player1?(player_name)
-      if @player1[:ships].reduce(:+).include?(coordinate)
-        "You hit a ship!"
-      else
-        "You missed!"
-      end
-    else
-      if @player2[:ships].reduce(:+).include?(coordinate)
-        "You hit a ship!" 
-      else
-        "You missed!"
-      end
-    end
+  def player_turn(coordinate, player_name)
+    shot(coordinate, player_name)
   end
 
   private
