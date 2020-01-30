@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Makers/week10/battleships_tech_test/spec/features/can_see_your_board_spec.rb": [
+      "/Users/student/Makers/week10/battleships_tech_test/spec/board_spec.rb": [
         1,
         null,
         1,
@@ -31,19 +31,45 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
+        2,
+        2,
+        18,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Makers/week10/battleships_tech_test/spec/features/can_see_your_board_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
         1,
         1,
-        9,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1580378104
+    "timestamp": 1580378324
   }
 }
