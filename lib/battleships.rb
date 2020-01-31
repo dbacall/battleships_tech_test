@@ -66,11 +66,3 @@ class Battleships
     @game.finished?(@defender)
   end
 end
-
-battleships = Battleships.new
-
-battleships.name_selection
-
-battleships.choose_ship_coordinates
-
-battleships.turn

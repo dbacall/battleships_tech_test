@@ -11,18 +11,21 @@ module Shot
   private 
 
   def hit?(player_hit, coordinate, player_hitting)
-    hit = false
-    sunk = false
+    @hit = false
+    @sunk = false
     player_hit[:ships].each { |ship| 
       if ship.coordinates.include?(coordinate)
-        hit = true
+        @hit = true
         ship.coordinates.delete(coordinate)
       end
-      sunk = true if ship.sunk?
+      if ship.sunk?
+        @sunk = true 
+        player_hit[:ships].delete(ship)  
+      end
     }
-    if hit
+    if @hit
       player_hitting[:board].mark_hit(coordinate)
-      if sunk
+      if @sunk
         puts 'You hit and sunk a ship!'
       else
         puts "You hit a ship!"

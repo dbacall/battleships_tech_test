@@ -114,14 +114,19 @@ class Game
     already_placed = false
     coordinates_checking = coordinate_placer(length, coordinate, direction)
     if player1?(player_name)
-      coordinates_checking.each{ |coord| 
-        @player1[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}
+      coordinates_checking.each { |coord| 
+        @player1[:ships].each { |ship| 
+          already_placed = true if ship.coordinates.include?(coord) 
+        }
       }
     else
-      coordinates_checking.each{ |coord| 
-        @player2[:ships].each{ |ship| already_placed = true if ship.coordinates.include?(coord)}
+      coordinates_checking.each { |coord| 
+        @player2[:ships].each { |ship| 
+          already_placed = true if ship.coordinates.include?(coord) 
+        }
       }
     end
-    raise "You have already placed a ship on some/all those coordinates!" if already_placed
+    error = "You have already placed a ship on some/all those coordinates!"
+    raise error if already_placed
   end
 end
